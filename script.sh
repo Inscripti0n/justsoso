@@ -20,5 +20,5 @@ curl -d "day6=b&did=1&men6=a&fun18=819" -d "ptopid=$ptopid&sid=$sid" -s $url2 -o
 sleep 2
 curl -d "@myvs.txt" -d "ptopid=$ptopid&sid=$sid" -s $url2 -o temp.txt #打卡
 udata=$(sed -n '24,26p' temp.txt)
-echo "$udata" > result.html
+echo "$udata" >> result.html
 done
